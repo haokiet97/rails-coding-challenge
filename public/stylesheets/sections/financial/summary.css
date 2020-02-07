@@ -1,0 +1,36 @@
+#financial-accounts .filter {
+  padding: 20px; }
+  #financial-accounts .filter form {
+    width: 490px;
+    margin: auto; }
+#financial-accounts .year-select {
+  width: 80px; }
+#financial-accounts .month-select {
+  width: 120px; }
+#financial-accounts table.income-summary .invoiced, #financial-accounts table.income-summary .received, #financial-accounts table.income-summary .tax1, #financial-accounts table.income-summary .tax2 {
+  width: 90px;
+  text-align: center; }
+#financial-accounts table.income-summary .received {
+  background-color: #f0f6f9; }
+#financial-accounts table.income-summary td, #financial-accounts table.income-summary th {
+  padding-right: 0;
+  padding-left: 0; }
+#financial-accounts table.income-summary th.received {
+  border-radius: 5px 5px 0 0;
+  behavior: url(/PIE.htc); }
+  #financial-accounts table.income-summary th.received.net {
+    border-radius: 6px 0 0 0;
+    behavior: url(/PIE.htc); }
+#financial-accounts table.income-summary .total .received {
+  border-radius: 0 0 5px 5px;
+  behavior: url(/PIE.htc); }
+  #financial-accounts table.income-summary .total .received.net {
+    border-radius: 0 0 0 6px;
+    behavior: url(/PIE.htc); }
+#financial-accounts table.income-summary .total td {
+  font-weight: bold;
+  font-size: 14px; }
+#financial-accounts table.income-summary tr:last-child td {
+  border-bottom: none; }
+
+/*# sourceMappingURL=summary.css.map */

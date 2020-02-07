@@ -1,0 +1,6 @@
+- if record.present? && record.errors.any?
+	.callout.callout-danger
+		%h2= "Save failed due to the following errors:"
+		%ul
+		- record.errors.full_messages.each do |msg|
+			%li= msg

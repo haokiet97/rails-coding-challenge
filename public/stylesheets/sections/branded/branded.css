@@ -1,0 +1,460 @@
+html, body {
+  font-family: "proxima-nova", "Arial"; }
+
+#footer {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+body, #body, #main-content {
+  min-height: auto;
+  height: auto; }
+
+h2 {
+  font-size: 1.5em; }
+
+#main-content {
+  position: relative;
+  width: 845px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 0;
+  background: white;
+  border-radius: 6px;
+  behavior: url(/PIE.htc);
+  -moz-box-shadow: 0 0 8px #ccc;
+  -webkit-box-shadow: 0 0 8px #ccc;
+  box-shadow: 0 0 8px #ccc; }
+
+.content-body {
+  padding: 0; }
+  .content-body.padded {
+    padding: 25px; }
+
+#wrapper, .wrapper {
+  width: 845px; }
+
+.custom-branding-header {
+  width: 100%; }
+  .custom-branding-header img {
+    display: block;
+    width: 845px;
+    height: auto;
+    margin: auto; }
+
+#footer {
+  color: #999;
+  padding-bottom: 10px;
+  text-align: center;
+  clear: both; }
+
+.prompt {
+  border-radius: 6px 6px 0 0;
+  behavior: url(/PIE.htc);
+  margin-top: -4px;
+  position: relative;
+  overflow: hidden;
+  background-color: #F0F6F9; }
+  .prompt.short {
+    border-radius: 6px;
+    behavior: url(/PIE.htc); }
+  .prompt .mug {
+    position: relative;
+    z-index: 100;
+    border-radius: 12px;
+    behavior: url(/PIE.htc);
+    float: left;
+    margin: 20px;
+    margin-top: 30px;
+    border: 5px solid #b9d5e3; }
+  .prompt h2 {
+    position: relative;
+    border-radius: 6px 6px 0 0;
+    behavior: url(/PIE.htc);
+    background-color: #b9d5e3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 140px;
+    margin-bottom: 0; }
+  .prompt .text {
+    color: #333;
+    font-size: 14px;
+    padding-left: 140px;
+    padding-top: 14px;
+    padding-bottom: 20px; }
+    .prompt .text li {
+      margin-left: 28px; }
+
+.booking-header {
+  position: relative;
+  background: #434343;
+  background: -moz-linear-gradient(top, #505050 0%, #434343 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #505050), color-stop(75%, #434343));
+  -pie-background: linear-gradient(#505050 0%, #434343 75%);
+  /*PIE*/
+  behavior: url(/PIE.htc);
+  border-radius: 6px 6px 0 0;
+  behavior: url(/PIE.htc);
+  color: white;
+  padding: 15px;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  overflow: hidden;
+  line-height: 60px; }
+  .booking-header .mug {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 60px !important;
+    height: 60px !important;
+    border: 2px solid white;
+    background-size: 60px 60px;
+    border-radius: 6px;
+    behavior: url(/PIE.htc); }
+
+.continue-bar {
+  position: relative;
+  background: #eee;
+  background: -moz-linear-gradient(top, #fbfbfb 0%, #eee 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfbfb), color-stop(75%, #eee));
+  -pie-background: linear-gradient(#fbfbfb 0%, #eee 75%);
+  /*PIE*/
+  behavior: url(/PIE.htc);
+  border-radius: 0 0 6px 6px;
+  behavior: url(/PIE.htc);
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  overflow: hidden;
+  font-size: 18px;
+  color: #555;
+  margin: 0;
+  text-align: left; }
+  .continue-bar .continue-message {
+    float: left;
+    line-height: 50px; }
+    .continue-bar .continue-message p {
+      margin: 0; }
+  .continue-bar form {
+    margin: 0; }
+  .continue-bar .btn.btn-booking {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: block;
+    float: right !important;
+    width: 196px !important;
+    margin: 0 !important;
+    width: 180px !important;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    padding: 0; }
+
+.offer-details .offer-sessions-description {
+  color: #666;
+  line-height: 1.5em;
+  font-size: 1.4em;
+  font-weight: bold; }
+.offer-details .offer-billing-description {
+  color: #777;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px; }
+
+.satori-branding-header {
+  min-height: 40px; }
+
+.satori-footer-credit a {
+  color: #999;
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  text-align: right;
+  padding-right: 60px;
+  font-size: 14px;
+  line-height: 60px;
+  background-image: url("/images/lotus/60.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  text-decoration: none;
+  opacity: 0.5; }
+  .satori-footer-credit a:hover {
+    color: #999;
+    opacity: 1; }
+
+.questionnaire-render {
+  padding: 40px; }
+  .questionnaire-render h2 {
+    font-size: 18px;
+    font-style: italic;
+    color: #444;
+    text-transform: none;
+    width: 600px; }
+  .questionnaire-render form {
+    margin: auto;
+    width: 600px; }
+  .questionnaire-render textarea {
+    width: 600px;
+    height: 80px; }
+
+.continue-bar {
+  text-align: center; }
+
+#client_reviews .content-body .invitation {
+  border-radius: 6px;
+  behavior: url(/PIE.htc);
+  background-color: #eee;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px; }
+  #client_reviews .content-body .invitation p:last-child {
+    margin-bottom: 0; }
+  #client_reviews .content-body .invitation .mug {
+    border-radius: 6px;
+    behavior: url(/PIE.htc);
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc; }
+#client_reviews .content-body.new {
+  overflow: hidden; }
+  #client_reviews .content-body.new form {
+    margin: 0; }
+  #client_reviews .content-body.new .alert-info {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  #client_reviews .content-body.new .form-fields-container {
+    width: 650px;
+    margin: auto; }
+  #client_reviews .content-body.new h2 {
+    margin-left: 200px;
+    margin-bottom: 10px; }
+  #client_reviews .content-body.new .control-label {
+    width: 200px; }
+  #client_reviews .content-body.new .note, #client_reviews .content-body.new .controls {
+    margin-left: 200px; }
+  #client_reviews .content-body.new input[type=text], #client_reviews .content-body.new textarea {
+    width: 400px; }
+  #client_reviews .content-body.new textarea {
+    height: 150px; }
+  #client_reviews .content-body.new .controls.gravatar {
+    line-height: 36px; }
+    #client_reviews .content-body.new .controls.gravatar .mug {
+      border-radius: 4px;
+      behavior: url(/PIE.htc);
+      float: left;
+      margin-right: 10px; }
+    #client_reviews .content-body.new .controls.gravatar input[type=checkbox] {
+      margin-right: 5px;
+      margin-top: -2px; }
+  #client_reviews .content-body.new .continue-bar {
+    position: relative;
+    background: #eee;
+    background: -moz-linear-gradient(top, #fbfbfb 0%, #eee 75%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfbfb), color-stop(75%, #eee));
+    -pie-background: linear-gradient(#fbfbfb 0%, #eee 75%);
+    /*PIE*/
+    behavior: url(/PIE.htc);
+    border-radius: 0 0 10px 10px;
+    behavior: url(/PIE.htc);
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    padding: 20px;
+    overflow: hidden;
+    font-size: 18px;
+    color: #555; }
+    #client_reviews .content-body.new .continue-bar .btn-success {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      display: block;
+      margin: auto;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      margin-top: 10px;
+      padding: 0; }
+  #client_reviews .content-body.new .reviews-disabled {
+    color: #aaa;
+    font-size: 1.5em;
+    padding: 40px;
+    text-align: center; }
+#client_reviews .content-body {
+  border-radius: 0 0 6px 6px;
+  behavior: url(/PIE.htc);
+  background-color: #f9f9f9;
+  display: table; }
+  #client_reviews .content-body .business-details {
+    display: table-cell;
+    width: 280px;
+    padding: 20px; }
+    #client_reviews .content-body .business-details .coach-name {
+      font-weight: bold;
+      font-size: 1.5em; }
+    #client_reviews .content-body .business-details .position {
+      font-size: 1.2em; }
+    #client_reviews .content-body .business-details .credentials {
+      color: #999; }
+    #client_reviews .content-body .business-details .contact-details {
+      border-top: 1px solid #ddd;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px; }
+    #client_reviews .content-body .business-details .phone, #client_reviews .content-body .business-details .website {
+      font-size: 1.4em;
+      line-height: 20px; }
+      #client_reviews .content-body .business-details .phone img, #client_reviews .content-body .business-details .website img {
+        float: left;
+        margin-right: 10px; }
+    #client_reviews .content-body .business-details .phone {
+      font-weight: bold; }
+    #client_reviews .content-body .business-details .call-to-action {
+      margin-left: -19px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #fcfcfc;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding-top: 12px;
+      padding-bottom: 12px; }
+      #client_reviews .content-body .business-details .call-to-action .btn.btn-success {
+        width: 250px; }
+  #client_reviews .content-body .reviews {
+    display: table-cell;
+    background: white;
+    border-right: 1px solid #ddd;
+    width: 560px;
+    border-radius: 0 0 0 6px;
+    behavior: url(/PIE.htc);
+    min-height: 450px; }
+  #client_reviews .content-body .no-reviews {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ccc;
+    padding-top: 150px; }
+  #client_reviews .content-body .review {
+    overflow: hidden;
+    padding: 20px;
+    width: 560px;
+    border-top: 1px solid #ddd; }
+    #client_reviews .content-body .review .rating {
+      float: right; }
+    #client_reviews .content-body .review .review-date {
+      float: right;
+      color: #bbb;
+      line-height: 36px; }
+    #client_reviews .content-body .review h2.review-title {
+      font-size: 1.3em;
+      text-transform: none;
+      font-style: italic;
+      font-family: Georgia, "Times New", serif;
+      margin-bottom: 10px; }
+    #client_reviews .content-body .review blockquote.review-body {
+      font-family: Georgia, "Times New", serif;
+      font-size: 1.2em;
+      line-height: 1.5em;
+      margin-right: 20px; }
+    #client_reviews .content-body .review .mug {
+      border-radius: 4px;
+      behavior: url(/PIE.htc);
+      float: left;
+      margin-right: 10px;
+      border: 1px solid #ddd; }
+    #client_reviews .content-body .review cite.client-name {
+      font-family: Georgia, "Times New", serif;
+      font-size: 1.2em;
+      line-height: 36px; }
+
+#marketing-orders .prompt .text {
+  padding: 20px;
+  padding-right: 40px; }
+#marketing-orders #order-form-container {
+  float: right;
+  width: 350px;
+  border-left: 1px solid #ddd;
+  padding-left: 20px; }
+  #marketing-orders #order-form-container .alert {
+    padding: 10px; }
+  #marketing-orders #order-form-container .order-form input[type=text], #marketing-orders #order-form-container .order-form textarea {
+    width: 340px; }
+  #marketing-orders #order-form-container .order-form .client-name input, #marketing-orders #order-form-container .order-form .client_name .field_with_errors {
+    width: 160px;
+    float: left; }
+  #marketing-orders #order-form-container .order-form #marketing_order_client_first_name {
+    margin-right: 10px; }
+  #marketing-orders #order-form-container .order-form textarea {
+    height: 40px; }
+  #marketing-orders #order-form-container .order-form .control-group {
+    margin: 0; }
+#marketing-orders .payment-options {
+  background-color: #eee;
+  padding: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  #marketing-orders .payment-options .option {
+    padding-bottom: 10px; }
+    #marketing-orders .payment-options .option p {
+      margin: 0;
+      margin-left: 25px;
+      margin-top: -20px;
+      font-weight: bold;
+      line-height: 24px; }
+  #marketing-orders .payment-options .or {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px; }
+    #marketing-orders .payment-options .or p {
+      width: 40px;
+      margin: auto;
+      background-color: #ffc;
+      margin-top: -30px;
+      font-style: italic;
+      text-align: center; }
+  #marketing-orders .payment-options input[type=radio] {
+    display: inline;
+    float: none; }
+  #marketing-orders .payment-options label {
+    font-size: 16px;
+    display: inline;
+    float: none;
+    font-weight: bold; }
+#marketing-orders .form-actions {
+  text-align: center;
+  padding: 10px; }
+  #marketing-orders .form-actions .btn-success {
+    float: none; }
+#marketing-orders #pay_with_paypal {
+  width: 145px;
+  height: 42px;
+  margin-top: 8px; }
+#marketing-orders .content-body.agreement-terms {
+  width: 500px;
+  border-right: 1px solid #ddd;
+  padding-right: 29px; }
+#marketing-orders .content-footer {
+  border-radius: 0 0 10px 10px;
+  behavior: url(/PIE.htc);
+  clear: both;
+  background-color: #f3f3f3;
+  color: #666;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  padding: 20px;
+  overflow: hidden; }
+
+/*# sourceMappingURL=branded.css.map */

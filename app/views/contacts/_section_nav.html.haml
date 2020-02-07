@@ -1,0 +1,6 @@
+%ul.nav.nav-justified.section-nav
+	-#%li{ class: action_name == 'index' ? 'active' : '' }= link_to "All Contacts", contacts_path
+	-#%li{ class: action_name == 'current_clients' ? 'active' : '' }= link_to "Current Clients", current_clients_contacts_path
+	-#%li{ class: action_name == 'former_clients' ? 'active' : '' }= link_to "Former Clients", former_clients_contacts_path
+	-#%li{ class: action_name == 'prospects' ? 'active' : '' }= link_to "Prospects", prospects_contacts_path
+	-#%li{ class: action_name == 'no_notes' ? 'active' : '' }= link_to "Fading", no_notes_contacts_path

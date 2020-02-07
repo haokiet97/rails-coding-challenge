@@ -1,0 +1,13 @@
+#login h1, #reset h1, #client-signup h1 {
+  text-align: center;
+  font-size: 2em;
+  float: none; }
+#login .lotus, #reset .lotus, #client-signup .lotus {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px; }
+
+/*# sourceMappingURL=login.css.map */

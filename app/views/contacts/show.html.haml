@@ -1,0 +1,95 @@
+- title @contact.full_name
+
+.content-header
+	%h1 Contacts
+	.btn-toolbar
+		= link_to "Edit Contact Details", edit_contact_path(@contact), class: "btn btn-new-record"
+		/ = new_record_button "Create New Contact", new_contact_path
+
+.content-body.no-padding
+	.row.table-layout
+		.col-sm-8.contact-profile-main
+
+			.contact-summary
+				.col-sm-4.contact-avatar-container
+					.contact-avatar-shadow.img-circle
+						= image_tag Avatar.url_for(@contact, 180), width: 180, height: 180, class: "contact-avatar img-circle"
+				.col-sm-8.contact-details-container
+					%h2.contact-name= @contact.full_name
+					%p.contact-position= ContactPresenter.new(@contact, self).position_and_company
+					%p.contact-email
+						= link_to(@contact.primary_email, "mailto:#{@contact.primary_email}")
+						- if @user.present?
+							%span.label.label-primary Primary
+					- if @user.present?
+						%p.contact-email= link_to @contact.email, "mailto:#{@contact.email}"
+					= form_for @contact do |f|
+						.input-group
+							= f.text_field :tags, { id: "contact_tags", :"data-role" => "tagsinput", placeholder: "edit tags", class: "tag-editor form-control", value: @contact.tags_alphabetically.join(",") }
+							%span.input-group-btn
+								= f.submit "Save Tags", { class: "btn btn-primary" }
+					.contact-resource-summary
+						= render :partial => "contact_resource_summary"
+
+			.row.contact-notes
+				/ NEW NOTE FORM
+				.panel.panel-default
+					= form_for @new_note do |f|
+						.panel-body
+							= f.text_area :text, class: "form-control", rows: 5
+							= f.hidden_field :subject_id
+							= f.hidden_field :subject_type
+						.panel-footer
+							= f.submit :value => "Add Note", :class => "btn btn-success", style: "float: right"
+
+				/ NOTES LIST
+				- @contact.notes.each do |note|
+					= render partial: "notes", locals: { note: note }
+
+		.col-sm-4.contact-profile-sidebar
+
+			/ CONTACT STATS
+			.row.resource-stat.last-contact
+				%p.value= format_date(@summary.last_contact_at)
+				%p.resource-stat-label Last Activity
+			.row.resource-stat.total-value
+				%p.value= format_currency(@summary.total_value, :thousands => true)
+				%p.resource-stat-label Total Value
+			.row.resource-stat.session-count
+				%p.value= @summary.num_sessions
+				%p.resource-stat-label Sessions
+
+
+			/ CONTACT DETAILS
+			/ = render :partial => "contact_engagement_summary"
+
+			/ AGREEMENTS
+			-#.panel.panel-default.panel-sidebar-list.agreements
+			-#	.panel-heading Agreements
+			-#	.panel-body
+			-#		- if @contact.agreements.any?
+			-#			%ul
+			-#				- present_array @contact.agreements, ContactAgreementPresenter do |a|
+			-#					%li
+			-#						%p.summary-primary= link_to a.display_name, agreement_path(a)
+			-#						%p.summary-secondary= a.status_line
+			-#
+			-#		- else
+			-#			.none None
+			-#
+			-#/ SESSIONS
+			-#.panel.panel-default.panel-sidebar-list.upcoming-sessions
+			-#	.panel-heading Upcoming Sessions
+			-#	.panel-body
+			-#		- if @contact.upcoming_sessions.any?
+			-#			%ul.contact-session-item-list
+			-#				- @contact.upcoming_sessions.each do |s|
+			-#					%li.contact-session-item
+			-#						%p.summary-primary= link_to format_full_session_time(s, current_user_timezone), bookings_session_path(s.session_key)
+			-#						%p.summary-secondary= "#{current_user_timezone} Time"
+			-#		- else
+			-#			.none None
+
+- content_for :javascript do
+	-#= javascript_include_tag 'vendor/bootstrap-tagsinput.js'
+	-#= javascript_include_tag 'app/contacts/show.js'

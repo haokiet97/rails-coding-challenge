@@ -1,0 +1,173 @@
+#client_reviews .content-body .invitation {
+  border-radius: 6px;
+  behavior: url(/PIE.htc);
+  background-color: #eee;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px; }
+  #client_reviews .content-body .invitation p:last-child {
+    margin-bottom: 0; }
+  #client_reviews .content-body .invitation .mug {
+    border-radius: 6px;
+    behavior: url(/PIE.htc);
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc; }
+#client_reviews .content-body.new {
+  overflow: hidden; }
+  #client_reviews .content-body.new form {
+    margin: 0; }
+  #client_reviews .content-body.new .alert-info {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  #client_reviews .content-body.new .form-fields-container {
+    width: 650px;
+    margin: auto; }
+  #client_reviews .content-body.new h2 {
+    margin-left: 200px;
+    margin-bottom: 10px; }
+  #client_reviews .content-body.new .control-label {
+    width: 200px; }
+  #client_reviews .content-body.new .note, #client_reviews .content-body.new .controls {
+    margin-left: 200px; }
+  #client_reviews .content-body.new input[type=text], #client_reviews .content-body.new textarea {
+    width: 400px; }
+  #client_reviews .content-body.new textarea {
+    height: 150px; }
+  #client_reviews .content-body.new .controls.gravatar {
+    line-height: 36px; }
+    #client_reviews .content-body.new .controls.gravatar .mug {
+      border-radius: 4px;
+      behavior: url(/PIE.htc);
+      float: left;
+      margin-right: 10px; }
+    #client_reviews .content-body.new .controls.gravatar input[type=checkbox] {
+      margin-right: 5px;
+      margin-top: -2px; }
+  #client_reviews .content-body.new .continue-bar {
+    position: relative;
+    background: #eee;
+    background: -moz-linear-gradient(top, #fbfbfb 0%, #eee 75%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfbfb), color-stop(75%, #eee));
+    -pie-background: linear-gradient(#fbfbfb 0%, #eee 75%);
+    /*PIE*/
+    behavior: url(/PIE.htc);
+    border-radius: 0 0 10px 10px;
+    behavior: url(/PIE.htc);
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    padding: 20px;
+    overflow: hidden;
+    font-size: 18px;
+    color: #555; }
+    #client_reviews .content-body.new .continue-bar .btn-success {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      display: block;
+      margin: auto;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      margin-top: 10px;
+      padding: 0; }
+  #client_reviews .content-body.new .reviews-disabled {
+    color: #aaa;
+    font-size: 1.5em;
+    padding: 40px;
+    text-align: center; }
+#client_reviews .content-body {
+  border-radius: 0 0 6px 6px;
+  behavior: url(/PIE.htc);
+  background-color: #f9f9f9;
+  display: table; }
+  #client_reviews .content-body .business-details {
+    display: table-cell;
+    width: 280px;
+    padding: 20px; }
+    #client_reviews .content-body .business-details .coach-name {
+      font-weight: bold;
+      font-size: 1.5em; }
+    #client_reviews .content-body .business-details .position {
+      font-size: 1.2em; }
+    #client_reviews .content-body .business-details .credentials {
+      color: #999; }
+    #client_reviews .content-body .business-details .contact-details {
+      border-top: 1px solid #ddd;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px; }
+    #client_reviews .content-body .business-details .phone, #client_reviews .content-body .business-details .website {
+      font-size: 1.4em;
+      line-height: 20px; }
+      #client_reviews .content-body .business-details .phone img, #client_reviews .content-body .business-details .website img {
+        float: left;
+        margin-right: 10px; }
+    #client_reviews .content-body .business-details .phone {
+      font-weight: bold; }
+    #client_reviews .content-body .business-details .call-to-action {
+      margin-left: -19px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #fcfcfc;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding-top: 12px;
+      padding-bottom: 12px; }
+      #client_reviews .content-body .business-details .call-to-action .btn.btn-success {
+        width: 250px; }
+  #client_reviews .content-body .reviews {
+    display: table-cell;
+    background: white;
+    border-right: 1px solid #ddd;
+    width: 560px;
+    border-radius: 0 0 0 6px;
+    behavior: url(/PIE.htc);
+    min-height: 450px; }
+  #client_reviews .content-body .no-reviews {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ccc;
+    padding-top: 150px; }
+  #client_reviews .content-body .review {
+    overflow: hidden;
+    padding: 20px;
+    width: 560px;
+    border-top: 1px solid #ddd; }
+    #client_reviews .content-body .review .rating {
+      float: right; }
+    #client_reviews .content-body .review .review-date {
+      float: right;
+      color: #bbb;
+      line-height: 36px; }
+    #client_reviews .content-body .review h2.review-title {
+      font-size: 1.3em;
+      text-transform: none;
+      font-style: italic;
+      font-family: Georgia, "Times New", serif;
+      margin-bottom: 10px; }
+    #client_reviews .content-body .review blockquote.review-body {
+      font-family: Georgia, "Times New", serif;
+      font-size: 1.2em;
+      line-height: 1.5em;
+      margin-right: 20px; }
+    #client_reviews .content-body .review .mug {
+      border-radius: 4px;
+      behavior: url(/PIE.htc);
+      float: left;
+      margin-right: 10px;
+      border: 1px solid #ddd; }
+    #client_reviews .content-body .review cite.client-name {
+      font-family: Georgia, "Times New", serif;
+      font-size: 1.2em;
+      line-height: 36px; }
+
+/*# sourceMappingURL=reviews.css.map */

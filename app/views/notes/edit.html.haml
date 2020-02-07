@@ -1,0 +1,7 @@
+.content-header.edit
+	- present @note do |n|
+		%h1
+			Edit note about 
+			= link_to n.subject_display_name, n.subject
+.content-body.edit.padded
+	= render 'form'

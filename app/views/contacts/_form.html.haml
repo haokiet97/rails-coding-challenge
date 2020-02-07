@@ -1,0 +1,76 @@
+- hide_cancel_link ||= false
+- hide_taxes_table ||= false
+- action_url ||= nil # I.e. default to the default URL that form_for provides
+
+= render "validation_errors", record: @contact
+
+= form_for(@contact, :url => action_url, :html => { :class => "form-horizontal contact-form" }) do |f|
+	
+	.form-group.row
+		= f.label :name, class: "col-sm-2 control-label"
+		.col-sm-4
+			= f.text_field :first_name, :class => 'first-name form-control'
+		.col-sm-4
+			= f.text_field :last_name, :class => 'last-name form-control'
+	.form-group
+		= f.label :position, class: "col-sm-2 control-label"
+		.col-sm-8
+			= f.text_field :position, class: "form-control"
+	.form-group
+		= f.label :business_name, "Company", class: "col-sm-2 control-label"
+		.col-sm-8
+			= f.text_field :business_name, class: "form-control"
+
+	%hr
+	
+	.form-group
+		= f.label :email, class: "col-sm-2 control-label"
+		.col-sm-8
+			= f.text_field :email, class: "form-control"
+	.form-group.phone
+		= f.label :phone_1, class: "col-sm-2 control-label"
+		.col-sm-6
+			= f.text_field :phone_1, class: "form-control"
+		.col-sm-2
+			= f.select :phone_1_label, ["Mobile", "Work", "Home", "Other"], {}, class: "form-control"
+	.form-group.phone
+		= f.label :phone_2, class: "col-sm-2 control-label"
+		.col-sm-6
+			= f.text_field :phone_2, class: "form-control"
+		.col-sm-2
+			= f.select :phone_2_label, ["Mobile", "Work", "Home", "Other"], {}, class: "form-control"
+	.form-group.phone
+		= f.label :phone_3, class: "col-sm-2 control-label"
+		.col-sm-6
+			= f.text_field :phone_3, class: "form-control"
+		.col-sm-2
+			= f.select :phone_3_label, ["Mobile", "Work", "Home", "Other"], {}, class: "form-control"
+	.form-group
+		= f.label :skype, class: "col-sm-2 control-label"
+		.col-sm-8
+			= f.text_field :skype, class: "form-control"
+	.form-group
+		= f.label :website, class: "col-sm-2 control-label"
+		.col-sm-8
+			= f.text_field :website, class: "form-control"
+	.form-group
+		= f.label :twitter, class: "col-sm-2 control-label"
+		.col-sm-8
+			= f.text_field :twitter, class: "form-control"
+	.form-group
+		= f.label "Address", class: "col-sm-2 control-label"
+		.col-sm-8
+			= f.text_area :street_address, :class => 'street-address form-control', rows: 3
+			.row
+				.col-sm-12
+					= f.text_field :city, :placeholder => 'City', class: "city form-control"
+			.row
+				.col-sm-4
+					= f.text_field :state, :placeholder => 'State', class: "state form-control"
+				.col-sm-4
+					= f.text_field :post_code, :placeholder => 'ZIP', class: "post-code form-control"
+				.col-sm-4
+					= f.select :country, ContactsHelper::Countries, { :disabled => " " }, class: "country form-control"
+		
+	.continue-bar
+		= f.submit :value => @contact.id.nil? ? "Add This Contact" : "Save Changes", :class => "btn btn-success"

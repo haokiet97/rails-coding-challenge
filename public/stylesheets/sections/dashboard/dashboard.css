@@ -1,0 +1,32 @@
+.revenue-chart-container {
+  position: relative; }
+  .revenue-chart-container #revenue-chart {
+    height: 250px;
+    width: 100%; }
+  .revenue-chart-container .chart-spinner {
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -12px;
+    top: 100px; }
+
+.dashboard-list-item {
+  overflow: hidden;
+  position: relative; }
+
+.no-revenue-message {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  color: #444;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-top: 80px; }
+
+.summary-status.label {
+  width: 80px; }
+  .summary-status.label a {
+    color: white; }
+
+/*# sourceMappingURL=dashboard.css.map */

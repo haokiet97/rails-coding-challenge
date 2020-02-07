@@ -1,0 +1,26 @@
+- if request.params["upcoming_session_id"].present?
+	= render_cell "upcoming_sessions", "display"
+	= render :partial => "contact_resource_summary"
+	= render :partial => "contact_engagement_summary"
+- else
+	= new_record_button "Create New Contact", new_contact_path
+
+	- if @has_contacts
+		- if @contact.present?
+			= render :partial => "contact_resource_summary"
+			= render :partial => "contact_engagement_summary"
+			
+		#recently-viewed
+			%h2 Recently viewed contacts
+	
+			%ul.others
+				- for recent in @recently_viewed
+					%li
+						%a{ :href => contact_path(recent), :class => recent_contact_class(recent) }
+							%img.mug{ :src => avatar_url(recent, 60), :width => 40, :height => 40 }
+							%p.summary-primary= recent.full_name
+							%p.summary-secondary= recent.email
+	- else
+		.alert.alert-info
+			:markdown
+				Looks like you don't have any contacts yet. Everybody has to start somewhere.

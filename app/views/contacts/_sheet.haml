@@ -1,0 +1,4 @@
+- skype_href = @contact.skype.present? ? "callto://#{@contact.skype}" : "#"
+- skype_button_class = @contact.skype.present? ? "primary" : "primary disabled"
+- skype_button_title = @contact.skype.present? ? "Call on Skype" : "Skype Unavailable"
+

@@ -1,0 +1,13 @@
+.content-body.show
+	.summary
+		= render :partial => "contacts/contacts/sheet"
+					
+	#contact-history
+		= render :partial => "contacts/contacts/resource_tabs"
+		
+		.session-list
+			- if @session_contexts.empty?
+				.blankslate
+					no sessions are scheduled for this contact
+			- else
+				= render :partial => "sessions/calendar/session_list", :locals => { :session_contexts => @session_contexts }

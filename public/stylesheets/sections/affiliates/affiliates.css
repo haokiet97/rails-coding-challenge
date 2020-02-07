@@ -1,0 +1,80 @@
+.conversion-stats, .referral-links {
+  width: 808px;
+  margin: auto;
+  overflow: hidden; }
+
+.wrapper {
+  width: 808px; }
+
+.summary {
+  padding-bottom: 0; }
+
+h2 {
+  text-align: center;
+  margin-top: 40px; }
+
+p.note {
+  color: #444;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0; }
+
+.conversion-stats .stats {
+  border-radius: 6px;
+  behavior: url(/PIE.htc);
+  background: #eee;
+  background: -moz-linear-gradient(top, #fbfbfb 0%, #eee 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfbfb), color-stop(75%, #eee));
+  -pie-background: linear-gradient(#fbfbfb 0%, #eee 75%);
+  /*PIE*/
+  behavior: url(/PIE.htc);
+  border: 1px solid #ccc;
+  overflow: hidden;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 20px; }
+  .conversion-stats .stats .stat {
+    width: 200px;
+    float: left;
+    text-align: center;
+    line-height: 24px; }
+
+p.referral-link {
+  border-radius: 6px;
+  behavior: url(/PIE.htc);
+  background: #f6f6f6;
+  background: -moz-linear-gradient(top, white 0%, #f6f6f6 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(75%, #f6f6f6));
+  -pie-background: linear-gradient(white 0%, #f6f6f6 75%);
+  /*PIE*/
+  behavior: url(/PIE.htc);
+  border: 1px solid #ddd;
+  padding: 0;
+  background: white;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 0; }
+  p.referral-link a {
+    font-weight: bold; }
+
+.badge {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden; }
+  .badge:last-child {
+    border-bottom: none; }
+  .badge img {
+    display: block;
+    margin-right: 0;
+    float: left; }
+  .badge textarea {
+    margin-left: auto;
+    display: block;
+    width: 400px;
+    height: 120px;
+    margin-top: 20px;
+    font-size: 16px; }
+
+/*# sourceMappingURL=affiliates.css.map */

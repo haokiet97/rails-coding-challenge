@@ -1,0 +1,19 @@
+.questionnaire-render {
+  padding: 40px; }
+  .questionnaire-render h2 {
+    font-size: 18px;
+    font-style: italic;
+    color: #444;
+    text-transform: none;
+    width: 600px; }
+  .questionnaire-render form {
+    margin: auto;
+    width: 600px; }
+  .questionnaire-render textarea {
+    width: 600px;
+    height: 80px; }
+
+.continue-bar {
+  text-align: center; }
+
+/*# sourceMappingURL=prompts.css.map */

@@ -1,0 +1,22 @@
+.satori-branding-header {
+  min-height: 40px; }
+
+.satori-footer-credit a {
+  color: #999;
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  text-align: right;
+  padding-right: 60px;
+  font-size: 14px;
+  line-height: 60px;
+  background-image: url("/images/lotus/60.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  text-decoration: none;
+  opacity: 0.5; }
+  .satori-footer-credit a:hover {
+    color: #999;
+    opacity: 1; }
+
+/*# sourceMappingURL=satori_branded_header.css.map */

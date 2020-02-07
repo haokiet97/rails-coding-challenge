@@ -1,0 +1,12 @@
+- title "Edit Details for #{@contact.full_name}"
+
+.content-header
+	%h1= @contact.full_name
+	%ul.section-nav
+.content-body.edit
+	/ %img.mug{ :src => avatar_url(@contact, 128), :width => 128, :height => 128 }
+	.details
+		= render 'form'
+
+- content_for :javascript do
+	= javascript_include_tag 'app/coaching/contact/edit.js'

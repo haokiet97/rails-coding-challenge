@@ -1,0 +1,9 @@
+%table.table
+  / = contact_summary_item("Email", @contact.email, "mailto:#{@contact.email}")
+  = contact_summary_item(@contact.phone_1_label, @contact.phone_1, nil)
+  = contact_summary_item(@contact.phone_2_label, @contact.phone_2, nil)
+  = contact_summary_item(@contact.phone_3_label, @contact.phone_3, nil)
+  = contact_summary_item("Skype", @contact.skype, "callto://#{@contact.skype}")
+  = contact_summary_item("Twitter", @contact.twitter, "http://twitter.com/#{@contact.twitter}")
+  / = contact_summary_item("contact/facebook.png", @contact.skype, nil)
+  / = contact_summary_item("contact/web.png", @contact.skype, nil)

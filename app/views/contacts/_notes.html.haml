@@ -1,0 +1,26 @@
+- present note do |note|
+	.contact-note{ id: "note_#{note.id}", class: note.activity_type_class }
+		- unless note.activity_type.present?
+			.btn-group.action-menu
+				%a.btn.dropdown-toggle{ :"data-toggle" => "dropdown", :href => "#" }
+					%span.gear
+				%ul.dropdown-menu.pull-right
+					%li= link_to "Edit Note", edit_note_path(note)
+					%li= link_to "Delete Note", note, data: { confirm: "Are you sure?" }, :method => :delete
+
+		%p.note-date= format_note_date(note.created_at)
+		%p.note-type= note.activity_type_description
+
+		- if note.is_session_reminder?
+			%p= note.session_reminder_description
+			%p
+				- if note.session.present?
+					%span= link_to "Reschedule", new_bookings_session_reschedule_path(note.session.session_key)
+					%span or
+					%span= link_to "Cancel", new_bookings_session_cancellation_path(note.session.session_key)
+					%span this session
+					- if note.session.prompts.present?
+						%span= " | "
+						%span= link_to "View Questionnaire", coaching_prompt_path(note.session.prompts)
+		- else
+			= note.render(4).html_safe

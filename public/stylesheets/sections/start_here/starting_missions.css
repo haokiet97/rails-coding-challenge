@@ -1,0 +1,53 @@
+.section-starting_missions .start-here {
+  padding: 30px;
+  text-align: center; }
+  .section-starting_missions .start-here h1 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    line-height: 2em;
+    margin-top: 20px;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+    color: #a0a0a0;
+    float: none; }
+  .section-starting_missions .start-here h2 {
+    color: #3f7fb4;
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 0.6em; }
+  .section-starting_missions .start-here p {
+    color: #a0a0a0;
+    font-size: 1.1em; }
+  .section-starting_missions .start-here ul {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 0; }
+  .section-starting_missions .start-here li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 12px;
+    width: 244px;
+    height: 244px; }
+    .section-starting_missions .start-here li .label {
+      font-size: 1.3em;
+      line-height: 3em;
+      color: #4383B6;
+      display: block;
+      margin-top: 244px; }
+  .section-starting_missions .start-here .btn-success {
+    min-width: 35%; }
+  .section-starting_missions .start-here .step1 {
+    background-image: url("/images/start_here/A.png"); }
+  .section-starting_missions .start-here .step2 {
+    background-image: url("/images/start_here/B.png"); }
+  .section-starting_missions .start-here .step3 {
+    background-image: url("/images/start_here/C.png"); }
+.section-starting_missions .starting-missions {
+  background: red; }
+  .section-starting_missions .starting-missions .mission .mission-badge {
+    float: left;
+    display: block; }
+  .section-starting_missions .starting-missions .mission h2 {
+    color: yellow; }
+
+/*# sourceMappingURL=starting_missions.css.map */

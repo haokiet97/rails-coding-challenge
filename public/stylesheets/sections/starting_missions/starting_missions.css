@@ -1,0 +1,88 @@
+.section-starting_missions .btn-toolbar {
+  position: relative; }
+  .section-starting_missions .btn-toolbar .progress {
+    display: inline-block;
+    vertical-align: middle;
+    width: 200px;
+    height: 10px;
+    margin-top: 16px;
+    marign-bottom: 15px; }
+  .section-starting_missions .btn-toolbar .span {
+    font-family: proxima-nova-soft;
+    font-weight: bold;
+    color: #999;
+    display: inline-block;
+    margin-left: 10px; }
+.section-starting_missions .start-here {
+  padding: 30px;
+  text-align: center; }
+  .section-starting_missions .start-here h1 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    line-height: 2em;
+    margin-top: 20px;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+    color: #a0a0a0;
+    float: none; }
+  .section-starting_missions .start-here h2 {
+    color: #3f7fb4;
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 0.6em; }
+  .section-starting_missions .start-here p {
+    color: #a0a0a0;
+    font-size: 1.1em; }
+  .section-starting_missions .start-here ul {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 0; }
+  .section-starting_missions .start-here li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 12px;
+    width: 244px;
+    height: 244px; }
+    .section-starting_missions .start-here li .label {
+      font-size: 1.3em;
+      line-height: 3em;
+      color: #4383B6;
+      display: block;
+      margin-top: 244px; }
+  .section-starting_missions .start-here .btn-success {
+    min-width: 35%; }
+  .section-starting_missions .start-here .step1 {
+    background-image: url("/images/start_here/A.png"); }
+  .section-starting_missions .start-here .step2 {
+    background-image: url("/images/start_here/B.png"); }
+  .section-starting_missions .start-here .step3 {
+    background-image: url("/images/start_here/C.png"); }
+.section-starting_missions .starting-missions .mission {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding-left: 144px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  min-height: 144px; }
+  .section-starting_missions .starting-missions .mission.mission-current {
+    background-color: #E8F4FA; }
+  .section-starting_missions .starting-missions .mission .mission-badge {
+    max-height: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    margin: auto; }
+  .section-starting_missions .starting-missions .mission .btn-mission-start {
+    min-width: 250px;
+    margin-right: 5px; }
+  .section-starting_missions .starting-missions .mission h2 {
+    color: #333;
+    font-size: 1.5em; }
+  .section-starting_missions .starting-missions .mission p {
+    color: #666;
+    font-size: 1.1em; }
+
+/*# sourceMappingURL=starting_missions.css.map */

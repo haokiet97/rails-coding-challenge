@@ -1,0 +1,16 @@
+.content-body.show
+	.summary
+		= render :partial => "contacts/contacts/sheet"
+					
+	#contact-history
+		= render :partial => "contacts/contacts/resource_tabs"
+
+		- if @agreement.nil?
+			#agreement.padded
+				%h2 No active agreement
+				.alert.alert-info
+					:markdown
+						There is no active coaching agreement for this contact. [Create a new agreement](#{new_agreement_path}).
+		- else
+			#agreement
+				= render :partial => "coaching/agreements/body"

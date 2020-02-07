@@ -1,0 +1,53 @@
+#financial-accounts .content-body p.note {
+  text-align: center; }
+#financial-accounts #chart {
+  text-align: center; }
+  #financial-accounts #chart img {
+    margin-top: 100px;
+    margin-bottom: 100px; }
+#financial-accounts table.income-projection th {
+  text-align: right;
+  font-size: 20px;
+  padding-top: 20px; }
+#financial-accounts table.income-projection td.date {
+  width: 120px; }
+#financial-accounts table.income-projection td.client {
+  text-align: left; }
+#financial-accounts table.income-projection td.amount {
+  text-align: right; }
+#financial-accounts table.income-projection tr.total td {
+  font-weight: bold;
+  font-size: 14px; }
+#financial-accounts table.income-projection td p {
+  display: inline; }
+#financial-accounts table.income-projection .first-payment, #financial-accounts table.income-projection .last-payment, #financial-accounts table.income-projection .overdue-payment {
+  border-radius: 4px;
+  behavior: url(/PIE.htc);
+  -moz-box-shadow: 2px 2px 4px #999;
+  -webkit-box-shadow: 2px 2px 4px #999;
+  box-shadow: 2px 2px 4px #999;
+  padding: 4px;
+  margin-left: -4px; }
+#financial-accounts table.income-projection .last-payment {
+  background: #e4ce00;
+  background: -moz-linear-gradient(top, #fde500 0%, #e4ce00 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fde500), color-stop(75%, #e4ce00));
+  -pie-background: linear-gradient(#fde500 0%, #e4ce00 75%);
+  /*PIE*/
+  behavior: url(/PIE.htc); }
+#financial-accounts table.income-projection .first-payment {
+  background: #a4c30b;
+  background: -moz-linear-gradient(top, #b8db0d 0%, #a4c30b 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8db0d), color-stop(75%, #a4c30b));
+  -pie-background: linear-gradient(#b8db0d 0%, #a4c30b 75%);
+  /*PIE*/
+  behavior: url(/PIE.htc); }
+#financial-accounts table.income-projection .overdue-payment {
+  background: #e40000;
+  background: -moz-linear-gradient(top, #fd0000 0%, #e40000 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fd0000), color-stop(75%, #e40000));
+  -pie-background: linear-gradient(#fd0000 0%, #e40000 75%);
+  /*PIE*/
+  behavior: url(/PIE.htc); }
+
+/*# sourceMappingURL=projection.css.map */

@@ -1,0 +1,8 @@
+#status-bar{ 'data-notice-message' => flash[:notice], 'data-warning-message' => flash[:warning], 'data-error-message' => flash[:error] }
+.hidden{ :style => "display: none" }
+	- if flash[:error]
+		= flash[:error]
+	- elsif flash[:warning]
+		= flash[:warning]
+	- elsif flash[:notice]
+		= flash[:notice]

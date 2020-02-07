@@ -1,0 +1,213 @@
+.content-body table.list-with-action tr:last-child {
+  height: 170px !important; }
+
+a.collapse-btn.pull-right {
+  text-transform: uppercase;
+  color: #828282;
+  font-size: 9pt;
+  position: relative;
+  top: 5px;
+  letter-spacing: 1px; }
+
+.collapse-btn:not(.collapsed) > span.glyphicon.glyphicon-triangle-right {
+  display: none; }
+
+.collapse-btn.collapsed > span.glyphicon.glyphicon-triangle-right {
+  display: inline-block; }
+
+.collapse-btn:not(.collapsed) > span.glyphicon.glyphicon-triangle-bottom {
+  display: inline-block; }
+
+.collapse-btn.collapsed > span.glyphicon.glyphicon-triangle-bottom {
+  display: none; }
+
+a.dropdown-toggle:hover, a.dropdown-toggle:focus {
+  color: #4774A7; }
+a.dropdown-toggle .glyphicon.action-arrow {
+  position: relative;
+  top: -3px;
+  font-size: 10px;
+  right: 1px; }
+
+.contact-index-item {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 86px;
+  border-bottom: 1px solid #ddd; }
+  .contact-index-item img.mug {
+    float: left;
+    margin-right: 10px; }
+  .contact-index-item p, .contact-index-item h2 {
+    margin-left: 70px; }
+  .contact-index-item h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #333; }
+  .contact-index-item .contact-position {
+    margin-bottom: 0; }
+  .contact-index-item:last-child {
+    border-bottom: none; }
+  .contact-index-item .action-menu {
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+
+ul.tags {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left; }
+  ul.tags li {
+    background-color: #ddd;
+    color: #444;
+    display: block;
+    float: left;
+    margin: 2px;
+    font-size: 1em;
+    line-height: 1em; }
+
+.tags-list table th {
+  font-weight: normal;
+  color: #999; }
+  .tags-list table th p {
+    font-size: 1em;
+    margin: 2px; }
+
+.contact-avatar-container {
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.contact-avatar-shadow {
+  max-width: 180px;
+  display: block;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.contact-avatar-shadow::before {
+  border-radius: 50%;
+  -webkit-box-shadow: inset 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: ""; }
+
+.contact-avatar {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto; }
+
+.contact-details-container {
+  padding-top: 25px;
+  margin-left: -10px; }
+
+.contact-name {
+  font-weight: bold;
+  font-size: 1.9em;
+  margin-bottom: 5px; }
+
+.contact-position {
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 5px; }
+
+.contact-email {
+  margin-top: 10px; }
+  .contact-email a {
+    font-size: 1.3em; }
+  .contact-email:last-of-type {
+    margin-bottom: 20px; }
+  .contact-email .label-primary {
+    position: relative;
+    bottom: 2px; }
+
+.bootstrap-tagsinput {
+  width: 100% !important; }
+
+.contact-resource-summary {
+  padding-top: 25px; }
+  .contact-resource-summary .summary-label {
+    font-weight: normal; }
+  .contact-resource-summary .summary-value {
+    font-weight: bold; }
+  .contact-resource-summary th, .contact-resource-summary td {
+    border-top: 1px dashed #ddd !important; }
+
+.contact-profile-sidebar {
+  background-color: #f3f6f9;
+  border-left: 1px solid #ddd;
+  padding: 0; }
+  .contact-profile-sidebar .panel {
+    background: transparent;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 0;
+    border-radius: 0;
+    behavior: url(/PIE.htc); }
+  .contact-profile-sidebar .panel-heading {
+    border-radius: 0;
+    behavior: url(/PIE.htc);
+    background-color: #d8e2eb;
+    color: #444; }
+  .contact-profile-sidebar .resource-stat {
+    margin: 0;
+    border-bottom: 1px dashed #ddd; }
+    .contact-profile-sidebar .resource-stat .value {
+      font-size: 32px; }
+
+form#new_note {
+  margin: 0; }
+
+.contact-notes {
+  clear: both;
+  padding: 25px;
+  padding-top: 0; }
+  .contact-notes .panel-footer {
+    overflow: hidden; }
+
+form.new_note {
+  overflow: hidden;
+  margin-bottom: 20px; }
+
+.contact-note {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  clear: both;
+  color: #444;
+  background-image: url(/images/activity/note.png);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: 8px 16px;
+  padding: 20px 20px 15px 54px;
+  font-size: 1.2em; }
+  .contact-note.contact-note-notification {
+    background-image: url(/images/activity/notification.png); }
+  .contact-note.contact-note-questionnaire_responses {
+    background-image: url(/images/activity/questionnaire.png); }
+
+.note-date {
+  font-weight: 800;
+  margin-bottom: 0; }
+
+.note-type {
+  color: #aaa; }
+
+#groups .contact-name {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 10px; }
+
+/*# sourceMappingURL=groups.css.map */

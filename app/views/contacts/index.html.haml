@@ -1,0 +1,73 @@
+- title "Contacts"
+
+.section-header.with-nav
+	%h1 Contacts
+	.btn-toolbar
+		= new_record_button "Create New Contact", new_contact_path
+	= render section_nav_partial
+
+.content-body.index
+	.row
+		.col-sm-8
+			.contacts
+				= will_paginate @contacts, :renderer => BootstrapPagination::Rails
+				- if @contacts.empty?
+					%p No contacts match the given criteria.
+				- else
+					- present_array @contacts, ContactPresenter do |contact|
+						.contact-index-item
+							%img.mug{ :src => avatar_url(contact, 64), :width => 64, :height => 64 }
+							%h2= link_to contact.full_name, contact_path(contact)
+							%p.contact-position= contact.position_and_company
+							%ul.tags
+								- contact.tags.each do |t|
+									%li.label.label-tag= t
+							.btn-group.action-menu
+								%a.btn.dropdown-toggle{ :"data-toggle" => "dropdown", :href => "#" }
+									%span.gear
+								%ul.dropdown-menu.pull-right
+									%li= link_to 'Show Contact', contact
+									%li= link_to 'Edit Contact', edit_contact_path(contact)
+									%li= link_to 'Delete Contact', contact, data: { confirm: "PERMANENTLY delete this contact and all associated information? This will delete any sessions, agreements, invoices, group memberships and notes associated with this contact. THIS ACTION CANNOT BE UNDONE. Proceed?" }, :method => :delete
+				= will_paginate @contacts, :renderer => BootstrapPagination::Rails
+				.clear &nbsp;
+
+		.col-sm-4
+			.sidebar-tools
+
+				-#.import-export
+				-#	%h2 Export contacts
+				-#	= link_to "CSV", contacts_path(format: "csv")
+				-#	or
+				-#	= link_to "JSON", contacts_path(format: "json")
+
+				.filters
+					%h2 Filter contacts
+					= search_form_for @search do |f|
+						.form-group
+							= f.label "Name", class: "control-label"
+							= f.search_field :full_name_cont, class: "form-control"
+						.form-group
+							= f.label "Company", class: "control-label"
+							= f.search_field :business_name_start, class: "form-control"
+						.form-group
+							= f.label "Position", class: "control-label"
+							= f.search_field :position_start, class: "form-control"
+						.form-group
+							= f.label "Email", class: "control-label"
+							= f.search_field :email_cont, class: "form-control"
+						.form-group
+							= f.submit "Filter Contacts", class: "btn btn-success btn-filter"
+
+				- unless @tags_by_initial.empty?
+					.tags-list
+						%h2 Browse by tag
+						%table.table
+							- @tags_by_initial.each do |i|
+								%tr
+									%th
+										%p= i[0]
+									%td
+										%ul.tags
+											- i[1].each do |t|
+												%li.label.label-default= link_to t.name, contacts_tag_path(t.name)

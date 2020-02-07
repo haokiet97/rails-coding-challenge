@@ -1,0 +1,107 @@
+#calendar-wrapper {
+  position: relative; }
+  #calendar-wrapper #loading-status {
+    display: none;
+    padding-top: 20px;
+    background-image: url(/images/loading_vale_background.png);
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 400px;
+    height: 170px;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -75px;
+    font-weight: bold;
+    font-size: 16px; }
+    #calendar-wrapper #loading-status p {
+      margin-bottom: 30px; }
+    #calendar-wrapper #loading-status .spinner {
+      display: inline; }
+  #calendar-wrapper #calendar-component {
+    margin: 0;
+    position: relative; }
+    #calendar-wrapper #calendar-component .wc-toolbar {
+      border-top: 1px solid #ccc;
+      background: #efefef;
+      background: -moz-linear-gradient(top, #fcfcfc 0%, #efefef 75%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(75%, #efefef));
+      -pie-background: linear-gradient(#fcfcfc 0%, #efefef 75%);
+      /*PIE*/
+      behavior: url(/PIE.htc);
+      margin: 0;
+      padding-top: 8px;
+      padding-bottom: 4px; }
+      #calendar-wrapper #calendar-component .wc-toolbar h1 {
+        text-align: center;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        color: #444; }
+      #calendar-wrapper #calendar-component .wc-toolbar .wc-nav.ui-buttonset {
+        width: 130px; }
+        #calendar-wrapper #calendar-component .wc-toolbar .wc-nav.ui-buttonset .wc-next .ui-button-text, #calendar-wrapper #calendar-component .wc-toolbar .wc-nav.ui-buttonset .wc-prev .ui-button-text {
+          display: none; }
+    #calendar-wrapper #calendar-component .wc-header {
+      background: #dfdfdf;
+      background: -moz-linear-gradient(top, #ececec 0%, #dfdfdf 75%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(75%, #dfdfdf));
+      -pie-background: linear-gradient(#ececec 0%, #dfdfdf 75%);
+      /*PIE*/
+      behavior: url(/PIE.htc);
+      padding-top: 10px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      font-weight: bold;
+      font-size: 12px;
+      color: #444; }
+    #calendar-wrapper #calendar-component .wc-time-header-cell {
+      font-size: 12px; }
+    #calendar-wrapper #calendar-component .wc-business-hours {
+      font-size: 12px; }
+      #calendar-wrapper #calendar-component .wc-business-hours .wc-am-pm {
+        font-size: 12px; }
+    #calendar-wrapper #calendar-component .wc-user-header {
+      display: none; }
+    #calendar-wrapper #calendar-component .wc-cal-event {
+      border-radius: 4px;
+      behavior: url(/PIE.htc);
+      font-weight: normal;
+      font-size: 10px; }
+    #calendar-wrapper #calendar-component .wc-time {
+      background: transparent;
+      border: none;
+      font-weight: normal;
+      font-size: 12px;
+      color: inherit; }
+    #calendar-wrapper #calendar-component .cal-event-session {
+      background: #106BBA;
+      background: -moz-linear-gradient(top, #1279d1 0%, #106BBA 75%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1279d1), color-stop(75%, #106BBA));
+      -pie-background: linear-gradient(#1279d1 0%, #106BBA 75%);
+      /*PIE*/
+      behavior: url(/PIE.htc);
+      border: 1px solid #004998;
+      color: #FFF; }
+    #calendar-wrapper #calendar-component .cal-event-other {
+      background: #7BD148;
+      background: -moz-linear-gradient(top, #8ad65c 0%, #7BD148 75%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8ad65c), color-stop(75%, #7BD148));
+      -pie-background: linear-gradient(#8ad65c 0%, #7BD148 75%);
+      /*PIE*/
+      behavior: url(/PIE.htc);
+      border: 1px solid #16A765;
+      color: #042013; }
+    #calendar-wrapper #calendar-component .free-busy-1 {
+      background: #FFFD89;
+      border-left: 10px solid #DDDB57; }
+    #calendar-wrapper #calendar-component .free-busy-2 {
+      background: #B2E6A3;
+      border-left: 10px solid #90C481; }
+    #calendar-wrapper #calendar-component .free-busy-3 {
+      background: #318DDC;
+      border-left: 10px solid #106BBA; }
+
+/*# sourceMappingURL=calendar.css.map */

@@ -1,0 +1,218 @@
+.revenue-chart-container {
+  position: relative; }
+  .revenue-chart-container #revenue-chart {
+    height: 250px;
+    width: 100%; }
+  .revenue-chart-container .chart-spinner {
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -12px;
+    top: 100px; }
+
+.dashboard-list-item {
+  overflow: hidden;
+  position: relative; }
+
+.no-revenue-message {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  color: #444;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-top: 80px; }
+
+.summary-status.label {
+  width: 80px; }
+  .summary-status.label a {
+    color: white; }
+
+.total-row {
+  font-weight: bold; }
+  .total-row th {
+    text-align: right; }
+
+.panel-heading {
+  font-weight: bold; }
+
+.panel {
+  min-height: 180px; }
+
+.payer-details .client-name,
+.biller-details .business-name,
+.biller-details .tax-number {
+  font-weight: bold; }
+
+table .amount {
+  width: 20%; }
+  table .amount input {
+    text-align: right; }
+
+table .hint {
+  width: 100px; }
+
+.schedule-for {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.index .filters {
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 5px; }
+  .index .filters .col-sm-2 {
+    padding-left: 5px;
+    padding-right: 5px; }
+    .index .filters .col-sm-2:first-child {
+      padding-left: 10px; }
+    .index .filters .col-sm-2:last-child {
+      padding-right: 10px; }
+.index .stats {
+  border: none;
+  margin-bottom: 25px;
+  margin-top: 25px; }
+  .index .stats .resource-stat {
+    border: none; }
+    .index .stats .resource-stat.export {
+      border-left: 1px solid #ddd; }
+.index .table-container {
+  margin-left: -25px;
+  margin-right: -25px; }
+.index .no-matches {
+  color: #666;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 2em; }
+.index .table {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  margin-top: 0; }
+  .index .table .invoice-row.void td, .index .table .invoice-row.void .client-name a, .index .table .invoice-row.void .invoice-number a {
+    color: #ccc;
+    text-decoration: line-through; }
+  .index .table .client-name,
+  .index .table .invoice-payment-date,
+  .index .table .invoice-outstanding,
+  .index .table .invoice-status {
+    border-right: 1px solid #ddd; }
+  .index .table td {
+    vertical-align: middle; }
+  .index .table tr td:first-child {
+    padding-left: 10px; }
+  .index .table tr td:last-child {
+    padding-right: 10px; }
+  .index .table .invoice-number {
+    text-align: center; }
+
+#billing-income_summary .filter {
+  margin-top: 10px;
+  margin-bottom: 30px; }
+  #billing-income_summary .filter form {
+    width: 490px;
+    margin: auto; }
+#billing-income_summary .year-select {
+  width: 80px; }
+#billing-income_summary .month-select {
+  width: 120px; }
+#billing-income_summary table.income-summary a {
+  font-weight: bold; }
+#billing-income_summary table.income-summary .invoiced, #billing-income_summary table.income-summary .received, #billing-income_summary table.income-summary .tax1, #billing-income_summary table.income-summary .tax2 {
+  width: 90px;
+  text-align: center; }
+#billing-income_summary table.income-summary .received {
+  background-color: #f0f6f9; }
+#billing-income_summary table.income-summary td, #billing-income_summary table.income-summary th {
+  padding-right: 0;
+  padding-left: 0; }
+#billing-income_summary table.income-summary th.received {
+  border-radius: 5px 5px 0 0;
+  behavior: url(/PIE.htc); }
+  #billing-income_summary table.income-summary th.received.net {
+    border-radius: 5px 5px 0 0;
+    behavior: url(/PIE.htc); }
+#billing-income_summary table.income-summary .total .received {
+  border-radius: 0 0 5px 5px;
+  behavior: url(/PIE.htc); }
+  #billing-income_summary table.income-summary .total .received.net {
+    border-radius: 0 0 5px 5px;
+    behavior: url(/PIE.htc); }
+#billing-income_summary table.income-summary .total td {
+  font-weight: bold;
+  font-size: 14px; }
+#billing-income_summary table.income-summary tr:last-child td {
+  border-bottom: none; }
+
+#financial-payments .content-body.complete, #financial-payments .content-body.error {
+  text-align: center; }
+  #financial-payments .content-body.complete h1, #financial-payments .content-body.error h1 {
+    margin-top: 60px; }
+#financial-payments .content-body {
+  padding: 20px;
+  padding-top: 40px; }
+#financial-payments .payment-slip {
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px dashed #ccc;
+  margin-top: 50px;
+  padding: 40px; }
+  #financial-payments .payment-slip .payment-options {
+    float: right;
+    margin-top: 30px; }
+  #financial-payments .payment-slip .paypal-notice {
+    margin-right: 20px;
+    float: left;
+    text-align: center;
+    color: #666; }
+  #financial-payments .payment-slip input[type=image] {
+    width: auto; }
+#financial-payments .paid-stamp, #financial-payments .authorized-stamp {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 800;
+  color: #900;
+  line-height: 0;
+  margin: 20px;
+  text-align: center; }
+
+.section-financial .income-summary {
+  margin-right: -10px; }
+  .section-financial .income-summary li, .section-financial .income-summary a {
+    border-radius: 6px;
+    behavior: url(/PIE.htc); }
+  .section-financial .income-summary a {
+    overflow: hidden; }
+  .section-financial .income-summary a:hover {
+    background-color: #eee;
+    text-decoration: none; }
+  .section-financial .income-summary .figure, .section-financial .income-summary .estimate {
+    font-size: 20px;
+    margin: 5px; }
+  .section-financial .income-summary .summary-label {
+    font-size: 12px;
+    text-transform: uppercase; }
+.section-financial .element {
+  float: left;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+.section-financial .month {
+  width: 95px; }
+.section-financial .year-to-date {
+  width: 140px; }
+  .section-financial .year-to-date:last-child {
+    border-left: 1px solid #ddd; }
+.section-financial .status-label {
+  font-weight: bold;
+  width: 90px;
+  display: inline-block;
+  text-align: center; }
+.section-financial .overdue.status-label {
+  color: #ee0000; }
+.section-financial .invoiced.status-label {
+  color: #e4ce00; }
+.section-financial .paid.status-label {
+  color: #accd0c; }
+
+/*# sourceMappingURL=financial.css.map */

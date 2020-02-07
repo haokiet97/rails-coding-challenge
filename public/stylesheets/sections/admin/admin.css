@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+#wrapper {
+  margin-top: 100px; }
+
+.container {
+  width: 640px; }
+
+.table.user-details th, .table.user-details td {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+  font-size: 1.2em; }
+.table.user-details .label {
+  font-size: 1em; }
+
+h2 {
+  margin-top: 2em; }
+
+.dashboard {
+  font-family: 'Varela Round', sans-serif;
+  padding: 50px;
+  text-align: center; }
+  .dashboard .header {
+    margin-bottom: 50px; }
+    .dashboard .header h1 {
+      font-family: 'Varela Round', sans-serif;
+      font-size: 130px;
+      line-height: 180px; }
+      .dashboard .header h1 span {
+        font-size: 30px;
+        line-height: 00px;
+        display: block; }
+    .dashboard .header .progress {
+      width: 700px;
+      margin: auto; }
+    .dashboard .header .progress, .dashboard .header .progress .bar {
+      height: 30px; }
+  .dashboard .indicator {
+    border-radius: 4px;
+    behavior: url(/PIE.htc);
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 1px 1px 3px #bbb;
+    width: 180px;
+    margin: 15px;
+    border: 1px solid #aaa;
+    float: left;
+    background-color: white; }
+    .dashboard .indicator h2 {
+      font-family: 'Varela Round', sans-serif;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 28px;
+      color: white;
+      background: #41724C;
+      padding: 0; }
+    .dashboard .indicator .data {
+      font-size: 40px;
+      padding: 10px; }
+      .dashboard .indicator .data .actual {
+        margin-top: 10px;
+        margin-bottom: 20px; }
+      .dashboard .indicator .data .goal {
+        font-size: 16px;
+        color: #aaa; }
+      .dashboard .indicator .data .trend {
+        display: block;
+        float: right;
+        font-size: 22px; }
+      .dashboard .indicator .data .up {
+        color: green; }
+      .dashboard .indicator .data .down {
+        color: red; }
+      .dashboard .indicator .data .sign {
+        vertical-align: super;
+        font-size: 0.5em; }
+    .dashboard .indicator p:last-child {
+      margin-bottom: 0; }
+
+/*# sourceMappingURL=admin.css.map */

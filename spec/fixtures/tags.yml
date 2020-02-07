@@ -1,0 +1,456 @@
+tag1:
+  id: 1
+  name: "rockstar"
+
+tag2:
+  id: 2
+  name: "yeah buddy"
+
+tag3:
+  id: 3
+  name: "saas"
+
+tag4:
+  id: 4
+  name: "current"
+
+tag5:
+  id: 5
+  name: "Be Productive"
+
+tag6:
+  id: 6
+  name: "January start"
+
+tag7:
+  id: 7
+  name: "CIT"
+
+tag8:
+  id: 8
+  name: "Toronto"
+
+tag9:
+  id: 9
+  name: "GTA"
+
+tag10:
+  id: 10
+  name: "2013"
+
+tag11:
+  id: 11
+  name: "July Start"
+
+tag12:
+  id: 12
+  name: "May start"
+
+tag13:
+  id: 13
+  name: "Coaching"
+
+tag14:
+  id: 14
+  name: "Consulting"
+
+tag15:
+  id: 15
+  name: "grant writer"
+
+tag16:
+  id: 16
+  name: "high priestess professor"
+
+tag17:
+  id: 17
+  name: "former client"
+
+tag18:
+  id: 18
+  name: "private mentor"
+
+tag19:
+  id: 19
+  name: "#GRANTCHAT"
+
+tag20:
+  id: 20
+  name: "current client"
+
+tag21:
+  id: 21
+  name: "Source: Quora"
+
+tag22:
+  id: 22
+  name: "former clients"
+
+tag23:
+  id: 23
+  name: "blog"
+
+tag24:
+  id: 24
+  name: "goddess"
+
+tag25:
+  id: 25
+  name: "Google Hangouts"
+
+tag26:
+  id: 26
+  name: "RSD"
+
+tag27:
+  id: 27
+  name: "GATR"
+
+tag28:
+  id: 28
+  name: "website"
+
+tag29:
+  id: 29
+  name: "VIP"
+
+tag30:
+  id: 30
+  name: "Pink Diamond"
+
+tag31:
+  id: 31
+  name: "June Start"
+
+tag32:
+  id: 32
+  name: "pro bono coaching"
+
+tag33:
+  id: 33
+  name: "1/1 coaching"
+
+tag34:
+  id: 34
+  name: "friend"
+
+tag35:
+  id: 35
+  name: "team"
+
+tag36:
+  id: 36
+  name: "subscriber"
+
+tag37:
+  id: 37
+  name: "running"
+
+tag38:
+  id: 38
+  name: "lead"
+
+tag39:
+  id: 39
+  name: "mastermind"
+
+tag40:
+  id: 40
+  name: "client"
+
+tag41:
+  id: 41
+  name: "adoption"
+
+tag42:
+  id: 42
+  name: "business"
+
+tag43:
+  id: 43
+  name: "yoga"
+
+tag44:
+  id: 44
+  name: "sussex"
+
+tag45:
+  id: 45
+  name: "ASCS"
+
+tag46:
+  id: 46
+  name: "ASCS Men"
+
+tag47:
+  id: 47
+  name: "ASCS WH"
+
+tag48:
+  id: 48
+  name: "Coaching Client"
+
+tag49:
+  id: 49
+  name: "Paid Coaching Client"
+
+tag50:
+  id: 50
+  name: "WELCOME MY WARRIOR!"
+
+tag51:
+  id: 51
+  name: "customer"
+
+tag52:
+  id: 52
+  name: "clarity"
+
+tag53:
+  id: 53
+  name: "terrible twos"
+
+tag54:
+  id: 54
+  name: "Life Coaching"
+
+tag55:
+  id: 55
+  name: "Relationship Development"
+
+tag56:
+  id: 56
+  name: "feature requests"
+
+tag57:
+  id: 57
+  name: "real love bootcamp"
+
+tag58:
+  id: 58
+  name: "website redesign"
+
+tag59:
+  id: 59
+  name: "membership"
+
+tag60:
+  id: 60
+  name: "mini e-course setup"
+
+tag61:
+  id: 61
+  name: "Career Counseling"
+
+tag62:
+  id: 62
+  name: "phone"
+
+tag63:
+  id: 63
+  name: "website form"
+
+tag64:
+  id: 64
+  name: "mindset reset"
+
+tag65:
+  id: 65
+  name: "Former Client"
+
+tag66:
+  id: 66
+  name: "EQ EVENTS"
+
+tag67:
+  id: 67
+  name: "EQ Events"
+
+tag68:
+  id: 68
+  name: "Success Coaching"
+
+tag69:
+  id: 69
+  name: "Seattle"
+
+tag70:
+  id: 70
+  name: "Vancouver"
+
+tag71:
+  id: 71
+  name: "MYM"
+
+tag72:
+  id: 72
+  name: "mym"
+
+tag73:
+  id: 73
+  name: "new"
+
+tag74:
+  id: 74
+  name: "peer orientation"
+
+tag75:
+  id: 75
+  name: "sponsorship"
+
+tag76:
+  id: 76
+  name: "AMiA"
+
+tag77:
+  id: 77
+  name: "Paying Client"
+
+tag78:
+  id: 78
+  name: "Spiritual Direction"
+
+tag79:
+  id: 79
+  name: "#warmlead"
+
+tag80:
+  id: 80
+  name: "Writers Retreat"
+
+tag81:
+  id: 81
+  name: "NO SHOW"
+
+tag82:
+  id: 82
+  name: "delete"
+
+tag83:
+  id: 83
+  name: "SKYPE!"
+
+tag84:
+  id: 84
+  name: "Pro Bono"
+
+tag85:
+  id: 85
+  name: "boarding school"
+
+tag86:
+  id: 86
+  name: "Prospect"
+
+tag87:
+  id: 87
+  name: "teams"
+
+tag88:
+  id: 88
+  name: "mentee"
+
+tag89:
+  id: 89
+  name: "Gold Member"
+
+tag90:
+  id: 90
+  name: "Platinum"
+
+tag91:
+  id: 91
+  name: "Real Estate"
+
+tag92:
+  id: 92
+  name: "newsletter"
+
+tag93:
+  id: 93
+  name: "potential"
+
+tag94:
+  id: 94
+  name: "testing"
+
+tag95:
+  id: 95
+  name: "Discovery Session"
+
+tag96:
+  id: 96
+  name: "6 month series"
+
+tag97:
+  id: 97
+  name: "Group SEB"
+
+tag98:
+  id: 98
+  name: "#test"
+
+tag99:
+  id: 99
+  name: "Modified Private Client"
+
+tag100:
+  id: 100
+  name: "free strategy session"
+
+tag101:
+  id: 101
+  name: "3 month website marketing strategy"
+
+tag102:
+  id: 102
+  name: "Office"
+
+tag103:
+  id: 103
+  name: "Private Client"
+
+tag104:
+  id: 104
+  name: "meetup"
+
+tag105:
+  id: 105
+  name: "prospects"
+
+tag106:
+  id: 106
+  name: "3-month coaching"
+
+tag107:
+  id: 107
+  name: "6-sessions"
+
+tag108:
+  id: 108
+  name: "PST"
+
+tag109:
+  id: 109
+  name: "GMT-5"
+
+tag110:
+  id: 110
+  name: "GMT+2"
+
+tag111:
+  id: 111
+  name: "8 sessions"
+
+tag112:
+  id: 112
+  name: "weekly sessions"
+
+tag113:
+  id: 113
+  name: "Thrive VIP"
+
+tag114:
+  id: 114
+  name: "collaborator"
+

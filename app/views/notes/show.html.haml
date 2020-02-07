@@ -1,0 +1,8 @@
+%h1= t '.title'
+%p
+  = link_to t('back'), notes_path
+  = link_to t('edit'), edit_note_path(@note)
+
+%dl
+  %dt= Note.human_attribute_name :text
+  %dd= @note.text

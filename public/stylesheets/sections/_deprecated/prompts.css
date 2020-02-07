@@ -1,0 +1,26 @@
+#coaching-prompts .prompt .text {
+  font-size: 18px;
+  line-height: 24px;
+  width: 640px; }
+#coaching-prompts .content-body {
+  padding-top: 20px; }
+  #coaching-prompts .content-body .thanks {
+    margin: 20px; }
+  #coaching-prompts .content-body h2 {
+    font-size: 18px;
+    font-style: italic;
+    color: #444;
+    width: 600px; }
+  #coaching-prompts .content-body form {
+    padding-left: 170px; }
+  #coaching-prompts .content-body textarea {
+    width: 600px;
+    height: 80px; }
+  #coaching-prompts .content-body .btn-submit {
+    display: block;
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 170px; }
+
+/*# sourceMappingURL=prompts.css.map */

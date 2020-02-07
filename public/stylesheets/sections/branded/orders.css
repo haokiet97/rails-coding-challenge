@@ -1,0 +1,82 @@
+#marketing-orders .prompt .text {
+  padding: 20px;
+  padding-right: 40px; }
+#marketing-orders #order-form-container {
+  float: right;
+  width: 350px;
+  border-left: 1px solid #ddd;
+  padding-left: 20px; }
+  #marketing-orders #order-form-container .alert {
+    padding: 10px; }
+  #marketing-orders #order-form-container .order-form input[type=text], #marketing-orders #order-form-container .order-form textarea {
+    width: 340px; }
+  #marketing-orders #order-form-container .order-form .client-name input, #marketing-orders #order-form-container .order-form .client_name .field_with_errors {
+    width: 160px;
+    float: left; }
+  #marketing-orders #order-form-container .order-form #marketing_order_client_first_name {
+    margin-right: 10px; }
+  #marketing-orders #order-form-container .order-form textarea {
+    height: 40px; }
+  #marketing-orders #order-form-container .order-form .control-group {
+    margin: 0; }
+#marketing-orders .payment-options {
+  background-color: #eee;
+  padding: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  #marketing-orders .payment-options .option {
+    padding-bottom: 10px; }
+    #marketing-orders .payment-options .option p {
+      margin: 0;
+      margin-left: 25px;
+      margin-top: -20px;
+      font-weight: bold;
+      line-height: 24px; }
+  #marketing-orders .payment-options .or {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px; }
+    #marketing-orders .payment-options .or p {
+      width: 40px;
+      margin: auto;
+      background-color: #ffc;
+      margin-top: -30px;
+      font-style: italic;
+      text-align: center; }
+  #marketing-orders .payment-options input[type=radio] {
+    display: inline;
+    float: none; }
+  #marketing-orders .payment-options label {
+    font-size: 16px;
+    display: inline;
+    float: none;
+    font-weight: bold; }
+#marketing-orders .form-actions {
+  text-align: center;
+  padding: 10px; }
+  #marketing-orders .form-actions .btn-success {
+    float: none; }
+#marketing-orders #pay_with_paypal {
+  width: 145px;
+  height: 42px;
+  margin-top: 8px; }
+#marketing-orders .content-body.agreement-terms {
+  width: 500px;
+  border-right: 1px solid #ddd;
+  padding-right: 29px; }
+#marketing-orders .content-footer {
+  border-radius: 0 0 10px 10px;
+  behavior: url(/PIE.htc);
+  clear: both;
+  background-color: #f3f3f3;
+  color: #666;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  padding: 20px;
+  overflow: hidden; }
+
+/*# sourceMappingURL=orders.css.map */

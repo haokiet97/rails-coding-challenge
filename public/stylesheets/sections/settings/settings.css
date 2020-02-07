@@ -1,0 +1,93 @@
+#settings-branding_settings input.colour {
+  width: 80%;
+  float: left; }
+#settings-branding_settings .miniColors-trigger {
+  float: left;
+  height: 34px;
+  margin-left: 6px; }
+#settings-branding_settings .note {
+  clear: both; }
+#settings-branding_settings .banner {
+  margin: auto; }
+#settings-branding_settings .max-dimensions {
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 40px; }
+
+#settings-invoicing_settings .row {
+  margin-top: 10px; }
+#settings-invoicing_settings .content-body table.taxes th {
+  padding-top: 0; }
+#settings-invoicing_settings .content-body table.taxes td, #settings-invoicing_settings .content-body table.taxes th {
+  padding-left: 0;
+  padding-right: 0; }
+#settings-invoicing_settings .content-body table.taxes .description {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px; }
+#settings-invoicing_settings .content-body table.taxes .rate {
+  text-align: right;
+  width: 60px; }
+  #settings-invoicing_settings .content-body table.taxes .rate input[type=text] {
+    text-align: right; }
+
+a.toggle {
+  overflow: hidden;
+  display: block;
+  float: right;
+  background-image: url("/images/controls/toggle.png");
+  height: 32px;
+  width: 122px;
+  margin-top: 3px; }
+  a.toggle.on {
+    background-position: 0px 32px;
+    text-indent: -1000px; }
+
+.connection-status {
+  overflow: hidden; }
+  .connection-status .btn {
+    float: right;
+    margin: 0; }
+  .connection-status p {
+    float: left;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 34px;
+    margin: 0; }
+
+#settings-newsletter_settings h1 {
+  text-align: left; }
+#settings-newsletter_settings .connection-status td.list-name, #settings-newsletter_settings .connection-status th.list-name {
+  text-align: left;
+  width: 80%; }
+#settings-newsletter_settings .connection-status td.member-count, #settings-newsletter_settings .connection-status th.member-count {
+  text-align: center;
+  font-weight: bold; }
+#settings-newsletter_settings .connection-status td.last-synced, #settings-newsletter_settings .connection-status th.last-synced {
+  text-align: right;
+  padding-right: 0; }
+
+#settings-calendar_syncing .table.calendars td {
+  border-top: 1px solid #ccc !important; }
+#settings-calendar_syncing .table.calendars .satori-sessions-calendar td {
+  border-top: 2px solid #ccc; }
+#settings-calendar_syncing .table.calendars td, #settings-calendar_syncing .table.calendars th {
+  vertical-align: middle; }
+#settings-calendar_syncing .table.calendars td {
+  height: 4em; }
+#settings-calendar_syncing .table.calendars td.cb {
+  padding-top: 0.8em; }
+#settings-calendar_syncing .table.calendars td.calendar, #settings-calendar_syncing .table.calendars th.calendar {
+  text-align: left; }
+#settings-calendar_syncing .table.calendars td.status, #settings-calendar_syncing .table.calendars th.status {
+  text-align: right; }
+#settings-calendar_syncing .table.calendars .label {
+  font-size: 1em; }
+#settings-calendar_syncing .table.calendars .title {
+  font-weight: bold;
+  margin-bottom: 0; }
+#settings-calendar_syncing .table.calendars .note {
+  margin-top: 0;
+  font-style: italic; }
+
+/*# sourceMappingURL=settings.css.map */

@@ -1,0 +1,139 @@
+.popover.session-event-inspector {
+  width: 278px; }
+  .popover.session-event-inspector .ui-autocomplete {
+    position: relative; }
+  .popover.session-event-inspector .avatar {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px; }
+  .popover.session-event-inspector .popover-title {
+    line-height: 1em; }
+    .popover.session-event-inspector .popover-title .contact-search-field {
+      display: block;
+      margin: auto;
+      border-radius: 12px;
+      padding-left: 12px;
+      padding-right: 12px; }
+    .popover.session-event-inspector .popover-title .spinner {
+      display: block;
+      position: absolute;
+      right: 24px;
+      top: 17px; }
+  .popover.session-event-inspector .popover-content {
+    padding: 0; }
+    .popover.session-event-inspector .popover-content .ui-widget-content {
+      border: none;
+      background: transparent; }
+    .popover.session-event-inspector .popover-content .contact-results {
+      overflow: hidden;
+      height: 200px;
+      background-color: #f6f6f6;
+      padding: 0;
+      margin: 0;
+      border: none; }
+      .popover.session-event-inspector .popover-content .contact-results ul {
+        list-style-type: none;
+        box-shadow: none;
+        margin: 0;
+        width: 278px;
+        border: none;
+        border-radius: 0;
+        padding: 0; }
+        .popover.session-event-inspector .popover-content .contact-results ul li {
+          border: none;
+          margin: 0; }
+          .popover.session-event-inspector .popover-content .contact-results ul li a {
+            line-height: 40px;
+            display: block;
+            padding: 5px; }
+          .popover.session-event-inspector .popover-content .contact-results ul li a.ui-state-hover {
+            border: none;
+            border-radius: 0;
+            color: black;
+            background: #f6f6f6;
+            margin: 0 !important; }
+          .popover.session-event-inspector .popover-content .contact-results ul li:last-child a {
+            border-bottom: 1px solid #eee; }
+
+#loading-status {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 400px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -75px; }
+  #loading-status .background {
+    border-radius: 6px;
+    behavior: url(/PIE.htc);
+    position: absolute;
+    display: block;
+    border: 1px solid black;
+    content: ' ';
+    background-color: black;
+    opacity: 0.8;
+    filter: alpha();
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    width: 400px;
+    height: 200px; }
+  #loading-status .content {
+    position: absolute;
+    color: white;
+    width: 360px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px; }
+    #loading-status .content p {
+      min-height: 60px;
+      margin-bottom: 0px;
+      line-height: 30px; }
+    #loading-status .content .spinner {
+      display: inline; }
+
+#questionnaires .content-body.index td.questions, #questionnaires .content-body.index th.questions {
+  width: 40px; }
+#questionnaires .content-body.index table td:last-child {
+  width: 30px;
+  padding-left: 20px;
+  padding-right: 20px; }
+#questionnaires .content-body form .question-drag-placeholder {
+  height: 100px; }
+#questionnaires .content-body form .question {
+  border: none;
+  margin-bottom: 20px; }
+  #questionnaires .content-body form .question .index {
+    text-align: center;
+    font-weight: bold;
+    width: 40px;
+    min-height: 50px;
+    line-height: 50px;
+    padding-left: 10px; }
+
+#email-questionnaire-details input, #email-questionnaire-details textarea {
+  width: 530px;
+  min-height: 30px;
+  padding: 7px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+#email-questionnaire-details textarea {
+  height: 80px; }
+#email-questionnaire-details .avatar {
+  border-radius: 4px;
+  behavior: url(/PIE.htc);
+  width: 40px;
+  height: 40px;
+  float: right; }
+#email-questionnaire-details .to-header {
+  font-weight: bold;
+  line-height: 40px; }
+
+/*# sourceMappingURL=questionnaires.css.map */

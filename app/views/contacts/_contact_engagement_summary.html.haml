@@ -1,0 +1,5 @@
+- present @contact do |c|
+	- if c.mailing_list_memberships.any?
+		%h2 Engagement
+		%ul.engagement-rating.resource-summary
+			= c.engagement_rating_item
