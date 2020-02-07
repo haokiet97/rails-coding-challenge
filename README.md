@@ -9,7 +9,7 @@ There are three exercises to complete:
 ## General Instructions
 There are 3 exercises in total. You will find the project files for each exercise in a separate branch of this repo. The instructions for each exercise are provided in README files on the respective branches. Read those documents carefully to understand the objectives for each exercise.
 
-- Clone this Github repo to your local machine.
+- Clone this repo to your local machine.
 - Check out the exercise branch (block, game, crm).
 - Check out a new branch from the exercise branch to do your work.
 - Read the README file for each exercise to understand the exercise goals and assessment criteria.
