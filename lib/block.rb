@@ -130,17 +130,31 @@ class Block
   # =============
   # = Operators =
   # =============
-  
+
   # Return the result of adding the other Block (or Blocks) to self.
 
-  def add (other)
-    # Implement.
+  def add other
+    if covers? other
+      return [self]
+    elsif overlaps? other
+      return [trim_to(other.bottom)] if intersects_top? other
+      return [trim_from(other.top)] if intersects_bottom? other
+    end
+    return [other] if other.covers? self
+    [other, self]
   end
-  
+
   # Return the result of subtracting the other Block (or Blocks) from self.
 
-  def subtract (other)
-    # Implement.
+  def subtract others
+    return sub others if others.is_a?Block
+    result = [self]
+    others.each do |other|
+      last_result = result.last
+      result.delete last_result
+      result = result|(last_result - other)
+    end
+    result
   end
 
   alias :- :subtract
@@ -159,7 +173,30 @@ class Block
     end
   end
 
-  def merge (others)
-    # Implement.
+  def merge others
+    result = [self]
+    others.each do |other|
+      last_result = result.last
+      temp_add = (last_result+ other).reverse
+      result.delete(last_result)
+      result = result|temp_add
+    end
+    result
+  end
+
+  private
+  def sub other
+    if other.covers? self
+      []
+    elsif covers? other
+      return [trim_from(other.bottom)] if top == other.top
+      return [trim_to(other.top)] if bottom == other.bottom
+      return split(other) if surrounds? other
+    elsif overlaps? other
+      return [trim_to(other.top)] if top < other.top
+      return [trim_from(other.bottom)] if bottom > other.bottom
+    else
+      [self]
+    end
   end
 end
