@@ -47,6 +47,7 @@ gem 'rspec-example_steps'              # Given/When/Then DSL for acceptance test
 
 gem 'factory_girl_rails', '>= 4.4.0'   # Factories for unit tests.
 gem 'database_cleaner'                 # Clean up the database after each test.
+gem 'figaro'
 
 # WEBDRIVERS
 

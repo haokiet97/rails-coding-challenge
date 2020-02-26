@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181120093035) do
+ActiveRecord::Schema.define(version: 20190726235403) do
 
   create_table "notes", force: true do |t|
     t.integer  "contact_id"
     t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "activity_type"
     t.integer  "subject_id"
     t.string   "subject_type"
-    t.string   "activity_type"
     t.text     "data"
   end
 
@@ -33,24 +33,24 @@ ActiveRecord::Schema.define(version: 20181120093035) do
     t.string   "twitter"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "phone_1_label"
-    t.string   "phone_2_label"
-    t.string   "phone_3_label"
-    t.string   "account_status"
-    t.text     "position"
-    t.text     "credentials"
-    t.text     "superpowers"
-    t.string   "business_name"
-    t.string   "phone_2"
-    t.string   "phone_3"
+    t.datetime "accessed_at"
     t.string   "skype"
     t.text     "street_address"
     t.string   "city"
     t.string   "state"
     t.string   "post_code"
     t.string   "country"
-    t.datetime "accessed_at"
+    t.string   "business_name"
+    t.string   "phone_2"
+    t.string   "phone_3"
+    t.string   "phone_1_label"
+    t.string   "phone_2_label"
+    t.string   "phone_3_label"
+    t.string   "account_status"
     t.datetime "last_note_at"
+    t.text     "position"
+    t.text     "credentials"
+    t.text     "superpowers"
     t.string   "type"
   end
 
